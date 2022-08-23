@@ -2,7 +2,6 @@ package com.example.nluc22_recyclerview
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.nluc22_recyclerview.Adapters.StudentAdapter
 import com.example.nluc22_recyclerview.databinding.ActivityMainBinding
@@ -36,9 +35,7 @@ class MainActivity : AppCompatActivity() {
         data.add(Student("120200444" ,"Mahmoud S Habbush" , 63.4 , R.drawable.mah))
 
         binder.rvStudent.layoutManager = LinearLayoutManager(this)
-
         val studentAdapter = StudentAdapter(this , data)
-
         binder.rvStudent.adapter = studentAdapter
     }
 }
